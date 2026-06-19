@@ -6,6 +6,10 @@
 
 Prove a **bold contractor** visual archetype distinct from the HVAC showcase — storm urgency, inspection credibility, rugged local trust.
 
+## Roofing Identity Rule
+
+Roofing showcase should emphasize **storm triage, inspection proof, documentation, and rugged local trust** — not comfort-tech dashboard visuals.
+
 ## Audience
 
 Portfolio prospects evaluating premium local contractor website direction.
@@ -17,10 +21,25 @@ Portfolio prospects evaluating premium local contractor website direction.
 - No third-party API integrations
 - No Google branding on review sections
 
+## Homepage Rhythm (Phase 2)
+
+```txt
+Hero → DiagnosticStrip → StormTriage → Services → ProjectProof → LocalPresence → Reviews → Contact
+```
+
+Storm concern → triage → service options → proof/process → local trust → contact.
+
 ## Pattern Stack
 
-Homepage follows pattern lab roofing archetype recipe:
+Core patterns from pattern lab roofing archetype, plus roofing-specific signature sections:
 
-SplitHero → DiagnosticStrip → ServiceCardGrid → LocalPresenceCardStack → ReviewWall → PremiumContactBlock
+- SplitHero (storm response board visual)
+- DiagnosticStrip
+- **StormTriage** (roofing-only)
+- ServiceCardGrid
+- **ProjectProof** (roofing-only)
+- LocalPresenceCardStack
+- ReviewWall
+- PremiumContactBlock
 
-Plus dedicated `/service-area` section page for coverage depth.
+Dedicated `/service-area` page for coverage depth.

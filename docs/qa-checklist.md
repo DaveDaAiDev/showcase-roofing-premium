@@ -42,3 +42,9 @@ npm run build
 
 - UI-only demo success state
 - No backend submission
+
+## Performance / INP
+
+- Only `Contact.tsx` uses client `useState` for demo submit feedback
+- No scroll/mousemove listeners in app code
+- Prefer CSS animations (see `globals.css` keyframes)

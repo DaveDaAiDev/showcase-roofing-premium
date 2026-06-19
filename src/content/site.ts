@@ -56,6 +56,77 @@ export const siteContent = {
       "Start with a fast inspection before small damage becomes a bigger repair.",
     cta: "Schedule Inspection",
   },
+  stormTriage: {
+    title: "Storm damage triage",
+    description:
+      "Not sure what you are seeing on the roof? Start here before guessing about repair or replacement.",
+    cta: "Request Roof Inspection",
+    cards: [
+      {
+        title: "Hail Damage",
+        sign: "Dented vents, granule loss, or bruised shingles after a storm.",
+        nextStep: "Request an inspection before filing blind.",
+        urgency: "High priority",
+      },
+      {
+        title: "Missing Shingles",
+        sign: "Visible gaps, tabs on the ground, or exposed underlayment.",
+        nextStep: "Schedule a leak-risk check this week.",
+        urgency: "Schedule soon",
+      },
+      {
+        title: "Active Leak",
+        sign: "Water stains, dripping, or moisture spreading during rain.",
+        nextStep: "Document the leak path and request triage.",
+        urgency: "Urgent",
+      },
+      {
+        title: "Wind Lift",
+        sign: "Lifted edges, creased shingles, or loose ridge caps after wind.",
+        nextStep: "Inspect attachment points before the next storm.",
+        urgency: "Monitor closely",
+      },
+    ],
+  },
+  projectProof: {
+    title: "Inspection proof, not pressure",
+    description:
+      "We document damage, explain options, and help homeowners understand next steps — demo placeholders, no real insurance promises.",
+    panels: [
+      {
+        label: "Before",
+        title: "Hail-worn shingles",
+        detail: "Granule loss and impact marks documented across affected planes.",
+      },
+      {
+        label: "After",
+        title: "Clean replacement",
+        detail: "New system installed with clear cleanup and final walkthrough.",
+      },
+      {
+        label: "Documentation",
+        title: "Photos + notes ready",
+        detail: "Organized inspection images and plain-language findings for your records.",
+      },
+    ],
+  },
+  heroReport: {
+    panelTitle: "Roof Inspection Report",
+    statusLabel: "Inspection Status",
+    statusValue: "Queued for review",
+    metrics: [
+      { label: "Hail Risk", value: "Elevated" },
+      { label: "Leak Triage", value: "Active" },
+      { label: "Crew Window", value: "This week" },
+      { label: "Documentation", value: "Insurance-friendly" },
+    ],
+    checklist: [
+      "Ridge cap and flashing review",
+      "Attic moisture signs checked",
+      "Photo notes prepared for homeowner",
+    ],
+    responseZone: "Fort Worth + Mid-Cities",
+  },
   services: [
     {
       title: "Storm Damage",
