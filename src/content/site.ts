@@ -64,25 +64,25 @@ export const siteContent = {
     cards: [
       {
         title: "Hail Damage",
-        sign: "Dented vents, granule loss, or bruised shingles after a storm.",
+        signs: "Dented vents, granule loss, or bruised shingles after a storm.",
         nextStep: "Request an inspection before filing blind.",
         urgency: "High priority",
       },
       {
         title: "Missing Shingles",
-        sign: "Visible gaps, tabs on the ground, or exposed underlayment.",
+        signs: "Visible gaps, tabs on the ground, or exposed underlayment.",
         nextStep: "Schedule a leak-risk check this week.",
         urgency: "Schedule soon",
       },
       {
         title: "Active Leak",
-        sign: "Water stains, dripping, or moisture spreading during rain.",
+        signs: "Water stains, dripping, or moisture spreading during rain.",
         nextStep: "Document the leak path and request triage.",
         urgency: "Urgent",
       },
       {
         title: "Wind Lift",
-        sign: "Lifted edges, creased shingles, or loose ridge caps after wind.",
+        signs: "Lifted edges, creased shingles, or loose ridge caps after wind.",
         nextStep: "Inspect attachment points before the next storm.",
         urgency: "Monitor closely",
       },
@@ -91,7 +91,13 @@ export const siteContent = {
   projectProof: {
     title: "Inspection proof, not pressure",
     description:
-      "We document damage, explain options, and help homeowners understand next steps — demo placeholders, no real insurance promises.",
+      "Image-ready before/after/documentation placeholders — photo notes, findings, repair path, and homeowner summary without insurance promises.",
+    highlights: [
+      "Photo notes",
+      "Inspection findings",
+      "Repair path",
+      "Homeowner-ready summary",
+    ],
     panels: [
       {
         label: "Before",
@@ -110,22 +116,52 @@ export const siteContent = {
       },
     ],
   },
+  documentationPacket: {
+    title: "Documentation packet",
+    description:
+      "Organized photo notes, inspection findings, and scope details homeowners can review — no insurance approval or legal claim guarantees implied.",
+    cta: "Request Inspection",
+    rows: [
+      { label: "Damage photos", description: "Labeled images by roof plane and penetration." },
+      { label: "Inspection notes", description: "Plain-language findings with priority flags." },
+      { label: "Roof area checklist", description: "Ridge, valleys, flashing, and attic clues." },
+      { label: "Repair/replacement recommendation", description: "Honest scope options without pressure." },
+      { label: "Next-step summary", description: "Homeowner-ready recap of what happens next." },
+    ],
+  },
+  inspectionProcess: {
+    title: "How roof inspections work",
+    description:
+      "A rugged stepper timeline for roofing inspections — distinct from HVAC service process cards.",
+    cta: "Schedule Inspection",
+    steps: [
+      { step: "01", title: "Inspect", description: "Walk the roof, attic clues, and storm impact zones." },
+      { step: "02", title: "Document", description: "Capture photos and notes in a structured packet." },
+      { step: "03", title: "Explain options", description: "Review repair vs replacement paths clearly." },
+      { step: "04", title: "Schedule repair or replacement", description: "Agree on timeline and next actions." },
+    ],
+  },
   heroReport: {
     panelTitle: "Roof Inspection Report",
-    statusLabel: "Inspection Status",
-    statusValue: "Queued for review",
+    queueLabel: "Inspection Queue",
+    responseZone: "Fort Worth + Mid-Cities",
     metrics: [
+      { label: "Inspection Status", value: "Queued" },
       { label: "Hail Risk", value: "Elevated" },
       { label: "Leak Triage", value: "Active" },
       { label: "Crew Window", value: "This week" },
-      { label: "Documentation", value: "Insurance-friendly" },
+      { label: "Documentation", value: "Ready to organize" },
     ],
     checklist: [
       "Ridge cap and flashing review",
       "Attic moisture signs checked",
       "Photo notes prepared for homeowner",
     ],
-    responseZone: "Fort Worth + Mid-Cities",
+    triagePreview: [
+      { label: "Hail", value: "Check vents" },
+      { label: "Leak", value: "Triage now" },
+      { label: "Wind", value: "Lift scan" },
+    ],
   },
   services: [
     {

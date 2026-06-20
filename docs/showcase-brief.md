@@ -4,7 +4,7 @@
 
 ## Purpose
 
-Prove a **bold contractor** visual archetype distinct from the HVAC showcase — storm urgency, inspection credibility, rugged local trust.
+Prove a **storm-contractor** visual archetype distinct from the HVAC showcase — storm urgency, inspection credibility, rugged local trust.
 
 ## Roofing Identity Rule
 
@@ -21,25 +21,32 @@ Portfolio prospects evaluating premium local contractor website direction.
 - No third-party API integrations
 - No Google branding on review sections
 
-## Homepage Rhythm (Phase 2)
+## Homepage Rhythm (Phase 3)
 
 ```txt
-Hero → DiagnosticStrip → StormTriage → Services → ProjectProof → LocalPresence → Reviews → Contact
+Hero → StormTriage → Services → ProjectProof → DocumentationPacket → InspectionProcessTimeline → LocalPresence → Reviews → Contact
 ```
 
-Storm concern → triage → service options → proof/process → local trust → contact.
+Story: storm concern → triage → services → proof/documentation → inspection process → local trust → contact.
+
+This differs from HVAC’s comfort/service rhythm.
 
 ## Pattern Stack
 
-Core patterns from pattern lab roofing archetype, plus roofing-specific signature sections:
+Storm Contractor Pattern Pack (adapted manually from pattern lab):
 
-- SplitHero (storm response board visual)
-- DiagnosticStrip
-- **StormTriage** (roofing-only)
+- **StormContractorHero** — asymmetrical storm hero with inspection report + triage preview
+- **StormTriageGrid** — hail, missing shingles, active leak, wind lift triage board
 - ServiceCardGrid
-- **ProjectProof** (roofing-only)
+- **ProjectProofGallery** — before/after/documentation placeholders
+- **DocumentationPacket** — organized inspection rows for homeowner review
+- **InspectionProcessTimeline** — inspect → document → explain → schedule
 - LocalPresenceCardStack
 - ReviewWall
 - PremiumContactBlock
 
 Dedicated `/service-area` page for coverage depth.
+
+## Clone Check
+
+If text is blurred, the site should read as storm contractor/roofing, not HVAC comfort-tech.

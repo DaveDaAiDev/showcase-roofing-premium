@@ -4,42 +4,54 @@ export function ProjectProof() {
   const { projectProof } = siteContent;
 
   return (
-    <section className="px-4 py-16 sm:px-6">
+    <section className="rounded-2xl border border-zinc-700/60 bg-zinc-100 px-4 py-12 sm:px-6 sm:py-14">
       <div className="mx-auto w-full max-w-6xl">
-        <div className="mb-10 max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.16em] text-amber-400">Project Proof</p>
-          <h2 className="mt-2 text-3xl font-bold text-stone-50 sm:text-4xl">{projectProof.title}</h2>
-          <p className="mt-3 text-stone-400">{projectProof.description}</p>
+        <div className="mb-8 max-w-2xl">
+          <p className="text-xs font-bold tracking-[0.18em] text-amber-700 uppercase">Project proof</p>
+          <h2 className="mt-2 text-2xl font-bold text-zinc-900 sm:text-3xl">{projectProof.title}</h2>
+          <p className="mt-3 text-sm text-zinc-600 sm:text-base">{projectProof.description}</p>
         </div>
 
-        <div className="grid gap-5 md:grid-cols-3">
-          {projectProof.panels.map((panel, index) => (
+        <div className="grid gap-5 lg:grid-cols-3">
+          {projectProof.panels.map((panel) => (
             <article
               key={panel.label}
-              className="relative overflow-hidden rounded-2xl border border-stone-700 bg-stone-950/70 p-5 transition motion-safe:duration-200 motion-safe:hover:-translate-y-1 motion-reduce:transform-none hover:border-stone-500"
+              className="overflow-hidden rounded-lg border border-zinc-300 bg-white shadow-sm"
             >
-              <div
-                className="pointer-events-none absolute -right-6 -top-8 h-24 w-24 rotate-12 border border-stone-600/40 bg-stone-800/30"
-                aria-hidden
-              />
-              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-amber-400">{panel.label}</p>
-              <h3 className="mt-2 text-xl font-semibold text-stone-100">{panel.title}</h3>
-              <p className="mt-2 text-sm text-stone-400">{panel.detail}</p>
-              <div
-                className={`mt-5 h-28 rounded-xl border border-dashed ${
-                  index === 0
-                    ? "border-stone-600 bg-gradient-to-br from-stone-800 to-stone-900"
-                    : index === 1
-                      ? "border-amber-600/30 bg-gradient-to-br from-stone-800 via-stone-900 to-amber-950/20"
-                      : "border-slate-600/40 bg-gradient-to-br from-slate-900 to-stone-950"
-                }`}
-                aria-hidden
-              >
-                <div className="flex h-full items-end p-3">
-                  <span className="text-[11px] uppercase tracking-wide text-stone-500">Demo placeholder panel</span>
+              <div className="relative aspect-[4/3] bg-zinc-900">
+                <div
+                  aria-hidden
+                  className="absolute inset-0 opacity-40"
+                  style={{
+                    backgroundImage:
+                      "repeating-linear-gradient(135deg, #27272a 0, #27272a 12px, #18181b 12px, #18181b 24px)",
+                  }}
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-zinc-950/90 to-transparent p-4">
+                  <span className="rounded-sm bg-amber-400 px-2 py-1 text-[0.65rem] font-bold tracking-wide text-zinc-950 uppercase">
+                    {panel.label}
+                  </span>
+                </div>
+                <div className="absolute top-3 right-3 rounded-sm border border-amber-500/40 bg-zinc-950/80 px-2 py-1 text-[0.6rem] font-medium text-amber-200">
+                  Image slot
                 </div>
               </div>
+              <div className="space-y-2 p-5">
+                <h3 className="text-lg font-bold text-zinc-900">{panel.title}</h3>
+                <p className="text-sm text-zinc-600">{panel.detail}</p>
+              </div>
             </article>
+          ))}
+        </div>
+
+        <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {projectProof.highlights.map((label) => (
+            <div
+              key={label}
+              className="rounded-md border border-zinc-300 bg-white px-4 py-3 text-sm font-medium text-zinc-700"
+            >
+              {label}
+            </div>
           ))}
         </div>
       </div>

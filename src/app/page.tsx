@@ -1,6 +1,7 @@
 import { Contact } from "@/components/sections/Contact";
-import { DiagnosticStrip } from "@/components/sections/DiagnosticStrip";
+import { DocumentationPacket } from "@/components/sections/DocumentationPacket";
 import { Hero } from "@/components/sections/Hero";
+import { InspectionProcessTimeline } from "@/components/sections/InspectionProcessTimeline";
 import { LocalPresence } from "@/components/sections/LocalPresence";
 import { ProjectProof } from "@/components/sections/ProjectProof";
 import { Reviews } from "@/components/sections/Reviews";
@@ -11,10 +12,11 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <DiagnosticStrip />
       <StormTriage />
       <Services />
       <ProjectProof />
+      <DocumentationPacket />
+      <InspectionProcessTimeline />
       <LocalPresence />
       <Reviews />
       <Contact />
